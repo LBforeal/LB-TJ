@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PURE FUSION | LB & TJ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-b9ypvfbSsc8WS34lDmVNmVLGHtIgXl2SzcTUpqk6BfMdvfpoPo7euTJioYq9wADux7zRx2rFM+9YZJd2Qp8zag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- CINEMATIC INTRO -->
+  <div class="cinematic-intro" id="cinematic-intro">
+    <button class="skip-intro" id="skip-intro">Skip</button>
+    <div class="intro-content">
+      <div class="intro-text intro-name" id="intro-name">LB & TJ</div>
+      <div class="intro-text intro-tagline" id="intro-tagline">PURE FUSION</div>
+    </div>
+  </div>
+
+  <!-- MAIN SITE -->
+  <header class="topbar">
+    <div class="logo">PURE FUSION</div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#discography">Tracks</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-background"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>PURE FUSION</h1>
+        <p class="subtitle">LB & TJ | FLOW × GROOVE</p>
+        <p class="tagline">Elevated street. Mountain purity. No compromise.</p>
+        <div class="hero-actions">
+          <a class="cta primary" href="#discography">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Listen</span>
+          </a>
+          <a class="cta ghost" href="#contact">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Collab</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-head">
+        <h2>THE UNIT</h2>
+        <p class="section-subtitle">Two artists. One vision. Pure fusion.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-photo">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="LB">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="about-info">
+            <h3>LB</h3>
+            <p class="role">FLOW</p>
+            <p>Raw lyricism meets mountain air. LB brings authentic storytelling and powerful delivery, crafting verses that cut through the noise. Every word is intentional, every bar is earned.</p>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-photo">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80" alt="TJ">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="about-info">
+            <h3>TJ</h3>
+            <p class="role">GROOVE</p>
+            <p>Beat architect in the shadows. TJ builds soundscapes from the ground up—deep bass, crisp drums, atmospheric layers. Each track is a journey, each beat a foundation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="discography" class="section discography">
+      <div class="section-head">
+        <h2>THE WORK</h2>
+        <p class="section-subtitle">FLOW by LB. GROOVE by TJ.</p>
+      </div>
+
+      <div class="tracks-grid">
+        <article class="track-card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" data-vocal="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" data-instrumental="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+          <div class="cover" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80');">
+            <div class="cover-overlay"></div>
+            <button class="play-btn" aria-label="Play track">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3>Peak Flow</h3>
+            <div class="track-credits">
+              <span>FLOW: LB</span>
+              <span>GROOVE: TJ</span>
+            </div>
+            <div class="card-actions">
+              <button class="play-inline">
+                <i class="fa-solid fa-microphone"></i>
+                <span>Play</span>
+              </button>
+              <div class="download-group">
+                <a class="download" href="#" data-type="vocal">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE TRACK</span>
+                </a>
+                <a class="download" href="#" data-type="instrumental">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE BEAT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="track-card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" data-vocal="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" data-instrumental="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">
+          <div class="cover" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80');">
+            <div class="cover-overlay"></div>
+            <button class="play-btn" aria-label="Play track">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3>Summit</h3>
+            <div class="track-credits">
+              <span>FLOW: LB</span>
+              <span>GROOVE: TJ</span>
+            </div>
+            <div class="card-actions">
+              <button class="play-inline">
+                <i class="fa-solid fa-microphone"></i>
+                <span>Play</span>
+              </button>
+              <div class="download-group">
+                <a class="download" href="#" data-type="vocal">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE TRACK</span>
+                </a>
+                <a class="download" href="#" data-type="instrumental">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE BEAT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="track-card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" data-vocal="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" data-instrumental="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3">
+          <div class="cover" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80');">
+            <div class="cover-overlay"></div>
+            <button class="play-btn" aria-label="Play track">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3>Elevation</h3>
+            <div class="track-credits">
+              <span>FLOW: LB</span>
+              <span>GROOVE: TJ</span>
+            </div>
+            <div class="card-actions">
+              <button class="play-inline">
+                <i class="fa-solid fa-microphone"></i>
+                <span>Play</span>
+              </button>
+              <div class="download-group">
+                <a class="download" href="#" data-type="vocal">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE TRACK</span>
+                </a>
+                <a class="download" href="#" data-type="instrumental">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE BEAT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="track-card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" data-vocal="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" data-instrumental="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3">
+          <div class="cover" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80');">
+            <div class="cover-overlay"></div>
+            <button class="play-btn" aria-label="Play track">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3>Altitude</h3>
+            <div class="track-credits">
+              <span>FLOW: LB</span>
+              <span>GROOVE: TJ</span>
+            </div>
+            <div class="card-actions">
+              <button class="play-inline">
+                <i class="fa-solid fa-microphone"></i>
+                <span>Play</span>
+              </button>
+              <div class="download-group">
+                <a class="download" href="#" data-type="vocal">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE TRACK</span>
+                </a>
+                <a class="download" href="#" data-type="instrumental">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE BEAT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="track-card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" data-vocal="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" data-instrumental="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3">
+          <div class="cover" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80');">
+            <div class="cover-overlay"></div>
+            <button class="play-btn" aria-label="Play track">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3>Ridge</h3>
+            <div class="track-credits">
+              <span>FLOW: LB</span>
+              <span>GROOVE: TJ</span>
+            </div>
+            <div class="card-actions">
+              <button class="play-inline">
+                <i class="fa-solid fa-microphone"></i>
+                <span>Play</span>
+              </button>
+              <div class="download-group">
+                <a class="download" href="#" data-type="vocal">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE TRACK</span>
+                </a>
+                <a class="download" href="#" data-type="instrumental">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE BEAT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="track-card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" data-vocal="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" data-instrumental="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+          <div class="cover" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80');">
+            <div class="cover-overlay"></div>
+            <button class="play-btn" aria-label="Play track">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3>Summit II</h3>
+            <div class="track-credits">
+              <span>FLOW: LB</span>
+              <span>GROOVE: TJ</span>
+            </div>
+            <div class="card-actions">
+              <button class="play-inline">
+                <i class="fa-solid fa-microphone"></i>
+                <span>Play</span>
+              </button>
+              <div class="download-group">
+                <a class="download" href="#" data-type="vocal">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE TRACK</span>
+                </a>
+                <a class="download" href="#" data-type="instrumental">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>TAKE BEAT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="player-panel">
+        <div class="player-meta">
+          <div class="player-title">Select a track</div>
+          <div class="visualizer">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="player-controls">
+          <button id="play-toggle" class="control-btn" aria-label="Play or pause">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <input id="progress" type="range" min="0" max="100" value="0" step="0.1">
+          <span id="time">00:00</span>
+          <div class="volume">
+            <i class="fa-solid fa-volume-high"></i>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="0.7">
+          </div>
+          <a id="download-current" class="control-btn ghost" href="#" download>
+            <i class="fa-solid fa-microphone"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="section-head">
+        <h2>THE VISUALS</h2>
+        <p class="section-subtitle">Moments from the mountain studio.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mountain peak"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain range"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80" alt="Mountain vista"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain scene"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mountain view"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <h2>CONNECT</h2>
+        <p class="section-subtitle">Let's create something pure.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="your@email.com">
+          </div>
+          <div class="form-row">
+            <label for="collab">Type of collab</label>
+            <select id="collab">
+              <option>Feature verse</option>
+              <option>Beat production</option>
+              <option>Remix</option>
+              <option>Live performance</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell us about your vision..."></textarea>
+          </div>
+          <button type="submit" class="cta primary">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Send</span>
+          </button>
+        </form>
+        <div class="contact-info">
+          <p>We're always open to collaboration. Whether you need a verse, a beat, or a full production—let's make it happen.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+          </div>
+          <a class="cta ghost" href="mailto:contact@purefusion.com">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Email us</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 PURE FUSION — LB & TJ | FLOW × GROOVE</p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
