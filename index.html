@@ -13,7 +13,10 @@
 <body>
   <!-- CINEMATIC INTRO -->
   <div class="cinematic-intro" id="cinematic-intro">
-    <button class="skip-intro" id="skip-intro"><i class="fas fa-microphone"></i></button>
+    <button class="skip-intro" id="skip-intro">
+      <i class="fa-solid fa-microphone"></i>
+      <span>Skip</span>
+    </button>
     <div class="intro-content">
       <div class="intro-text intro-name" id="intro-name">LB & TJ</div>
       <div class="intro-text intro-tagline" id="intro-tagline">PURE FUSION</div>
@@ -30,7 +33,18 @@
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
   </header>
+  
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#discography">Tracks</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <main>
     <section id="hero" class="section hero">
@@ -61,7 +75,7 @@
       <div class="about-grid">
         <div class="about-card">
           <div class="about-photo">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="LB">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="LB" loading="lazy">
             <div class="photo-overlay"></div>
           </div>
           <div class="about-info">
@@ -72,7 +86,7 @@
         </div>
         <div class="about-card">
           <div class="about-photo">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80" alt="TJ">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80" alt="TJ" loading="lazy">
             <div class="photo-overlay"></div>
           </div>
           <div class="about-info">
@@ -293,7 +307,7 @@
         </div>
         <div class="player-controls">
           <button id="play-toggle" class="control-btn" aria-label="Play or pause">
-            <i class="fas fa-microphone"></i>
+            <i class="fa-solid fa-microphone"></i>
           </button>
           <input id="progress" type="range" min="0" max="100" value="0" step="0.1">
           <span id="time">00:00</span>
@@ -314,12 +328,12 @@
         <p class="section-subtitle">Moments from the mountain studio.</p>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mountain peak"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain range"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80" alt="Mountain vista"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain scene"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mountain view"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mountain peak" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain range" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80" alt="Mountain vista" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Mountain scene" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mountain view" loading="lazy"></div>
       </div>
     </section>
 
@@ -332,15 +346,16 @@
         <form class="contact-form">
           <div class="form-row">
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name">
+            <input id="name" type="text" placeholder="Your name" required>
           </div>
           <div class="form-row">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="your@email.com">
+            <input id="email" type="email" placeholder="your@email.com" required>
           </div>
           <div class="form-row">
             <label for="collab">Type of collab</label>
-            <select id="collab">
+            <select id="collab" required>
+              <option value="">Select...</option>
               <option>Feature verse</option>
               <option>Beat production</option>
               <option>Remix</option>
@@ -349,7 +364,7 @@
           </div>
           <div class="form-row">
             <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Tell us about your vision..."></textarea>
+            <textarea id="message" rows="4" placeholder="Tell us about your vision..." required></textarea>
           </div>
           <button type="submit" class="cta primary">
             <i class="fa-solid fa-microphone"></i>
@@ -377,11 +392,10 @@
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-microphone"></i>
+    <i class="fa-solid fa-microphone"></i>
   </button>
 
   <audio id="audio" preload="metadata"></audio>
   <script src="script.js"></script>
 </body>
 </html>
-
