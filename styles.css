@@ -200,17 +200,19 @@ img { max-width: 100%; display: block; }
 .hero-background {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80');
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80&fit=crop');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   filter: grayscale(100%);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
 }
 
 .hero-content {
@@ -317,10 +319,12 @@ img { max-width: 100%; display: block; }
 
 /* ABOUT SECTION - City skyline silhouette */
 .about {
-  background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1920&q=80');
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1920&q=80&fit=crop');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   filter: grayscale(100%);
   position: relative;
 }
@@ -329,7 +333,7 @@ img { max-width: 100%; display: block; }
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
   pointer-events: none;
 }
 
@@ -716,10 +720,12 @@ input[type="range"] {
 /* GALLERY SECTION */
 /* GALLERY SECTION - West Coast hip-hop culture */
 .gallery {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1920&q=80');
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544966503-7cc5ac886f4c?auto=format&fit=crop&w=1920&q=80&fit=crop');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   filter: grayscale(100%);
   position: relative;
 }
@@ -942,6 +948,13 @@ textarea {
     min-height: 80vh;
   }
   
+  /* Mobile: Change background-attachment to scroll for better performance */
+  .hero-background,
+  .about,
+  .gallery {
+    background-attachment: scroll;
+  }
+  
   .about-grid {
     grid-template-columns: 1fr;
   }
@@ -957,4 +970,11 @@ textarea {
   .download-group {
     flex-direction: column;
   }
+}
+
+.fas.fa-microphone {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
 }
